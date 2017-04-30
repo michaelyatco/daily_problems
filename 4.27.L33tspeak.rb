@@ -21,3 +21,13 @@
 #V -> \/
 #W -> `//
 #Your challenge, should you choose to accept it, is to translate to and from L33T.
+
+def hacker_speak(string)
+  subset = {'a'=> 4, 'b'=> 6, 'e'=> 3, 'i'=> 1, 'l'=> 1, 'm'=> '(V)', 'n'=> '(\)', 'o'=> 0, 's'=> 5, 't'=> 7, 'v'=> '\/', 'w'=> '`//'}
+  p string
+  p string.chars
+  p string.chars.map { |letter| subset[letter]}
+  p string.chars.map { |letter| subset[letter]}.join
+end
+
+p hacker_speak("chair")
